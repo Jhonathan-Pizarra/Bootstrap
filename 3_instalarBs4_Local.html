@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--BS4 usa la filosofia "Mobile first, esta etiqueta sirve para el responsive en móviles táctiles, garantizando que pueda hacer zoom: "-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--BS4 la propiedad width=device-width, es la parte que establece el ancho de la página para seguir el ancho de pantalla del dispositivo (que variará dependiendo del dispositivo)-->
+    <!--Importar localmente-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+                                                                      <!--La initial-scale=1parte establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.-->
+    <title>BS4 Descargado</title>
+  </head>
+  <body>
+    <p>Para esta ocacion voy a enseñar a usar bootstrap4 descargado en mi equipo local</p>
+    <p>en la carpeta material se encuentra un bootstrap-dist, ese es el que uso. y me lo descargué desde getboostrap.com</p>
+
+    <div class="container">
+      Esto es un container de clase .container, la cual proporciona un contenedor de ancho fijo sensible, limitado
+    </div>
+
+    <div class="container-fluid">
+      Este es un container de clase .container-fluid, esta clase clase proporciona un contenedor de ancho completo , que abarca todo el ancho de la ventana gráfica.
+    </div>
+    Básicamente lo que está sucediendo es:
+    <div>
+      <img  src="teoria/containers.png" alt="colapsado" width="800px" height="auto">
+    </div>
+    <p>es importante que respetes el orden... primero es el jquery, luego el popper, y al último el js de bootstrp
+      Ahora, y en adelante yo usaré el Bootstrap que es vinculado remotamente, es decir el CDN porque es más aconsejable...
+    </p>
+
+
+    <!--Como estás usando Bootstrap local, también debes descargarte JQuery (La version compressed recomndablemente): https://jquery.com/download/ -->
+      <script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
+    <!--Importamos el popper de js, pero este no se recomienda que sea descargado localmente , sino remotamente, por tanto usamos el CDN, mira más info en: https://popper.js.org -->
+      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <!--Importamos el js de bootstrp-->
+      <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+  </body>
+</html>
